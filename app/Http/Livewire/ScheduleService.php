@@ -48,7 +48,7 @@ class ScheduleService extends Component
             'frequency_id'=>$this->selectedFrequency,
             'start_date'=>$this->startDate,
             'time_id'=>$this->selectedTime,
-            'notes'=>$this->notes
+            'note'=>$this->notes
         ]);
         $appointment->days()->attach($this->selectedDays);
         // Clear fields and set success message
