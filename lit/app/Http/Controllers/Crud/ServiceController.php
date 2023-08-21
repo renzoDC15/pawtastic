@@ -20,7 +20,7 @@ class ServiceController extends CrudController
      */
     public function authorize(Authorizable $user, string $operation, $id = null): bool
     {
-        // return $user->can("{$operation} services");
-        return true;
+        return $user->can("{$operation} services");
+        // return true;
     }
 }

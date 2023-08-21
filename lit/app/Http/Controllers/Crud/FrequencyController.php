@@ -20,7 +20,7 @@ class FrequencyController extends CrudController
      */
     public function authorize(Authorizable $user, string $operation, $id = null): bool
     {
-        // return $user->can("{$operation} frequencies");
-        return true;
+        return $user->can("{$operation} frequencies");
+        // return true;
     }
 }

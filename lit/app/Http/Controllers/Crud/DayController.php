@@ -20,7 +20,7 @@ class DayController extends CrudController
      */
     public function authorize(Authorizable $user, string $operation, $id = null): bool
     {
-        // return $user->can("{$operation} days");
-        return true;
+        return $user->can("{$operation} days");
+        // return true;
     }
 }

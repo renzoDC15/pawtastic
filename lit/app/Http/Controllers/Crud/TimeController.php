@@ -20,7 +20,7 @@ class TimeController extends CrudController
      */
     public function authorize(Authorizable $user, string $operation, $id = null): bool
     {
-        // return $user->can("{$operation} times");
-        return true;
+        return $user->can("{$operation} times");
+        // return true;
     }
 }

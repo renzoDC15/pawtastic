@@ -20,7 +20,7 @@ class HomeController extends CrudController
      */
     public function authorize(Authorizable $user, string $operation, $id = null): bool
     {
-        // return $user->can("{$operation} homes");
-        return true;
+        return $user->can("{$operation} homes");
+        // return true;
     }
 }
